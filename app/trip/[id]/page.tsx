@@ -27,7 +27,7 @@ export default function TripDetailPage() {
 
   const handleSelect = () => {
     setSelectedTrip(trip);
-    router.push("/addons");
+    router.push("/seats");
   };
 
   return (

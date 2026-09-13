@@ -40,7 +40,7 @@ export default function SeatsPage() {
 
   return (
     <div className="min-h-screen bg-surface-off flex flex-col pb-28">
-      <TopBar title="Select Seats" back="/addons" />
+      <TopBar title="Select Seats" back={booking.selectedTrip ? `/trip/${booking.selectedTrip.id}` : "/search"} />
 
       {/* Legend */}
       <div className="bg-white border-b border-gray-100 px-5 py-2.5 flex items-center justify-center gap-5">
@@ -145,11 +145,11 @@ export default function SeatsPage() {
           </div>
         )}
         <button
-          onClick={() => router.push("/booking-summary")}
+          onClick={() => router.push("/addons")}
           disabled={selectedSeats.length === 0}
           className="w-full h-14 rounded-btn text-white font-bold font-poppins active:scale-95 transition-transform disabled:opacity-40"
           style={{ background: "linear-gradient(90deg, #401551, #4C2A72)" }}>
-          {selectedSeats.length === 0 ? "Select at least 1 seat" : "Continue to Summary →"}
+          {selectedSeats.length === 0 ? "Select at least 1 seat" : "Continue to Add-ons →"}
         </button>
       </div>
     </div>

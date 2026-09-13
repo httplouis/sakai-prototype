@@ -71,7 +71,7 @@ export default function AddonsPage() {
 
   return (
     <div className="min-h-screen bg-surface-off flex flex-col pb-28">
-      <TopBar title="Add-ons" back={selectedTrip ? `/trip/${selectedTrip.id}` : "/search"} />
+      <TopBar title="Add-ons" back="/seats" />
 
       <div className="px-4 pt-4 pb-4">
         <p className="text-xs text-text-secondary mb-4">Enhance your journey with optional add-ons. You can skip these.</p>
@@ -124,12 +124,12 @@ export default function AddonsPage() {
       </div>
 
       <div className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[430px] bg-white border-t border-gray-100 px-5 py-4 z-40">
-        <button onClick={() => router.push("/seats")}
+        <button onClick={() => router.push("/booking-summary")}
           className="w-full h-14 rounded-btn text-white font-bold font-poppins active:scale-95 transition-transform"
           style={{ background: "linear-gradient(90deg, #401551, #4C2A72)" }}>
-          Continue to Seat Selection →
+          Continue to Booking Summary →
         </button>
-        <button onClick={() => router.push("/seats")}
+        <button onClick={() => router.push("/booking-summary")}
           className="w-full text-center text-sm text-text-secondary font-medium mt-2 py-1">
           Skip add-ons
         </button>
