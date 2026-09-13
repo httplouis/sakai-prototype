@@ -76,12 +76,12 @@ export default function BottomNav() {
                     boxShadow: "0 4px 20px rgba(76,42,114,0.5)",
                   }}>
                   <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
-                    <path d="M12 2 L13.5 8.5 L20 10 L13.5 11.5 L12 18 L10.5 11.5 L4 10 L10.5 8.5 Z"
-                      fill="#F4B400"/>
-                    <path d="M19 2 L19.8 4.2 L22 5 L19.8 5.8 L19 8 L18.2 5.8 L16 5 L18.2 4.2 Z"
-                      fill="#F4B400" opacity="0.7"/>
-                    <path d="M5 16 L5.5 17.5 L7 18 L5.5 18.5 L5 20 L4.5 18.5 L3 18 L4.5 17.5 Z"
-                      fill="#F4B400" opacity="0.5"/>
+                    {/* Rounded 4-point star */}
+                    <path
+                      d="M12 2 C12 2 12.8 7.5 14.5 9.5 C16.2 11.5 22 12 22 12 C22 12 16.2 12.5 14.5 14.5 C12.8 16.5 12 22 12 22 C12 22 11.2 16.5 9.5 14.5 C7.8 12.5 2 12 2 12 C2 12 7.8 11.5 9.5 9.5 C11.2 7.5 12 2 12 2 Z"
+                      fill="#F4B400"
+                      style={{ filter: "drop-shadow(0 0 3px rgba(244,180,0,0.4))" }}
+                    />
                   </svg>
                 </div>
                 <span className={`text-[10px] mt-1 font-semibold ${isActive("/ai-assistant") ? "text-violet-primary" : "text-text-secondary"}`}>
