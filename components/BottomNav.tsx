@@ -72,20 +72,19 @@ export default function BottomNav() {
                 <div
                   className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-transform active:scale-95"
                   style={{
-                    background: "linear-gradient(135deg,#F4B400,#FFCA28)",
-                    boxShadow: "0 4px 20px rgba(244,180,0,0.45)",
+                    background: "linear-gradient(135deg,#401551,#4C2A72)",
+                    boxShadow: "0 4px 20px rgba(76,42,114,0.5)",
                   }}>
-                  {/* Sparkle icon */}
                   <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
                     <path d="M12 2 L13.5 8.5 L20 10 L13.5 11.5 L12 18 L10.5 11.5 L4 10 L10.5 8.5 Z"
-                      fill="#1A1533" strokeLinejoin="round"/>
+                      fill="#F4B400"/>
                     <path d="M19 2 L19.8 4.2 L22 5 L19.8 5.8 L19 8 L18.2 5.8 L16 5 L18.2 4.2 Z"
-                      fill="#1A1533" opacity="0.6" strokeLinejoin="round"/>
+                      fill="#F4B400" opacity="0.7"/>
                     <path d="M5 16 L5.5 17.5 L7 18 L5.5 18.5 L5 20 L4.5 18.5 L3 18 L4.5 17.5 Z"
-                      fill="#1A1533" opacity="0.5" strokeLinejoin="round"/>
+                      fill="#F4B400" opacity="0.5"/>
                   </svg>
                 </div>
-                <span className={`text-[10px] mt-1 font-semibold ${isActive("/ai-assistant") ? "text-[#F4B400]" : "text-text-secondary"}`}>
+                <span className={`text-[10px] mt-1 font-semibold ${isActive("/ai-assistant") ? "text-violet-primary" : "text-text-secondary"}`}>
                   AI
                 </span>
               </Link>
